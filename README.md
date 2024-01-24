@@ -1,7 +1,5 @@
-# Project Title
-
-Homework Code 
-
+# Homework Code
+ 
 ## Description
 
 Here I'll be posting all the homework code for sem-4 WebDev classes
