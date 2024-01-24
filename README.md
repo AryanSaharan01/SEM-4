@@ -1,39 +1,18 @@
-# Homework Code
- 
+# WebDev Homework Repository
+
 ## Description
 
-Here I'll be posting all the homework code for sem-4 WebDev classes
+This repository contains all the homework code for the WebDev classes in semester 4.
+
 ## Getting Started
 
 ### Files Direct Links
-[Table] (25-01-2024_069_TABLE.html)
+
+- [Table](25-01-2024_069_TABLE.html)
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* Download VS Code in ur PC/Laptop
-* Copy the code and paste it in ur file that u opened in VS Code
-
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-
-
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/).
+2. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
