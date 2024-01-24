@@ -5,10 +5,8 @@
 Here I'll be posting all the homework code for sem-4 WebDev classes
 ## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### Files Direct Links
+[Table] (25-01-2024_069_TABLE.html)
 
 ### Installing
 
