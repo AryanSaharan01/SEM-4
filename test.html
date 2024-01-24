@@ -13,60 +13,111 @@
                      font-family: 'Arial', sans-serif;
               }
 
+              h1 {
+                     text-align: center;
+                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                     text-shadow: 2px 2px greenyellow;
+              }
+
               table {
                      margin: auto auto;
                      border-collapse: collapse;
                      width: 80vw;
+                     margin-top: 9vh;
+                     box-shadow: 11px 12px 6px 0px #494949;
+
               }
 
-              table tr :nth-child(3){
-                     border-right: dashed red;       
+              table tr :nth-child(3) {
+                     border-right: dashed red;
               }
 
               td,
               th {
                      border: 2px solid violet;
-                     padding:5px 13px;
+                     padding: 5px 13px;
               }
 
-              th{
-                     border: 1px solid black;
-                     background-color: rgb(69, 165, 225);
-              }
-
-              /* Light Theme */
-              body.light-theme {
-                     background-color: #fff;
-                     color: #000;
-              }
-
-              /* Dark Theme */
-              body.dark-theme {
-                     background-color: #333;
-                     color: #fff;
+              th {
+                     border: 2px solid violet;
+                     background-color: rgb(151 223 255);
               }
 
               .theme-button {
                      position: fixed;
-                     left: 10px;
-                     top: 50%;
+                     right: 10px;
+                     top: 55%;
                      transform: translateY(-50%);
                      padding: 10px;
                      cursor: pointer;
                      border: none;
                      background-color: rgb(69, 165, 225);
                      color: #fff;
-                     font-size: 16px;
-                     border-radius: 5px;
+                     /* font-size: 16px; */
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 50%;
                      z-index: 1;
+                     box-shadow: 0px 0px 8px 3px #494949;
+
+              }
+
+              /* Light Theme */
+              body.light-theme {
+                     transition: 0.4s ease;
+
+                     background-color: #fff;
+                     color: #000;
+              }
+
+              /* Dark Theme */
+              body.dark-theme {
+                     transition: 0.4s ease;
+                     background-color: #333;
+                     color: #fff;
+
+                     table {
+                            box-shadow: 11px 12px 6px 0px orange;
+                     }
+
+                     h1 {
+                            color: greenyellow;
+                            text-shadow: none;
+                     }
+
+                     table tr :nth-child(3) {
+                            border-right: 4px dashed red;
+                     }
+
+                     td,
+                     th {
+                            border: 2px solid #a0fe0a;
+                            padding: 5px 13px;
+                     }
+
+                     th {
+                            color: #000;
+                            border: 2px solid #000;
+                            background-color: orange;
+                     }
+
+                     .theme-button {
+                            background-color: coral;
+                            color: #000;
+                            font-weight: 900;
+                            box-shadow: 0px 0px 8px 3px #fff;
+
+                     }
               }
        </style>
 
 </head>
 
-<body class="light-theme">
+<body class="dark-theme">
 
-       <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
+       <button class="theme-button" onclick="toggleTheme()">$$</button>
+
+       <h1>Crazy Table with Light & Dark Theme</h1>
 
        <table>
               <tr>
@@ -76,14 +127,18 @@
                      <th>Field-1</th>
               </tr>
               <tr>
-                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.  </td>
-                   
-                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.</td>
-                     
-                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.</td>
-                     
-                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam. </td>
-                    
+                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.
+                     </td>
+
+                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.
+                     </td>
+
+                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.
+                     </td>
+
+                     <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem tenetur aperiam.
+                     </td>
+
 
               </tr>
               <tr>
@@ -112,7 +167,6 @@
               <script>
                      function toggleTheme() {
                             const body = document.body;
-
                             // Toggle between light and dark mode
                             body.classList.toggle('light-theme');
                             body.classList.toggle('dark-theme');
