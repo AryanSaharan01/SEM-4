@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurred Box Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1504288145234-919e7bbc6d19?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwxMTY4NTF8fGVufDB8fHx8fA%3D%3D'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .blurred-box {
+            background-color: rgb(255 255 255 / 21%); /* Adjust the last value (0.5) for the desired level of translucency */
+            padding: 0px 20px 20px 20px ;
+            border-radius: 30px;
+            backdrop-filter: blur(15px); /* Adjust the blur amount as needed */
+        }
+
+        /* Add additional styles for your text or elements within the box as needed */
+        .blurred-box p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form {
+            color: white;
+            width: 30vw;
+            border: 2px solid #808080ae;
+            margin: auto auto;
+            padding: 15px 25px;
+            border-radius: 20px;
+            box-shadow: 10px 8px 9px 3px #353434ae;
+
+        }
+
+        .form label {
+            padding-top: 10px;
+        }
+
+        .form input, textarea, select {
+            border-radius: 10px;
+            background-color: #8080806e;
+            /* border: 1px solid rgb(238, 193, 11); */
+            /* border-bottom-right-radius: 10px; */
+        border: 1px solid white;
+        }
+        
+
+        button {
+            display: flex;
+            margin: auto auto;
+            margin-top: 3vh;
+            padding: 8px 40px;
+            border-radius: 12px;
+            font-weight: 600;
+            color: black;
+            font-size: large;
+            /* background-color: rgba(7, 161, 110, 0.732); */
+            border: 3px solid rgb(238, 193, 11);
+            background-color: rgb(238, 193, 11);
+            box-shadow: 10px 8px 9px 3px #808080ae;
+            border: transparent;
+            transition: 0.3s ease;
+        }
+
+        button:hover{
+            transition: 0.3s ease;
+            /* border: 2px solid white; */
+            border-radius: 0px;
+            color: white;
+            background-color: black;
+        }
+
+        .BOLD {
+            font-size: large;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+h1{
+text-align: center;
+color: white;
+}
+    </style>
+</head>
+<body>
+
+    <div class="blurred-box">
+        <h1>Form Sample</h1>
+        <form action="/submit" method="post" class="form">
+
+            <label class="BOLD" for="name">Name:</label>
+            <input type="text" name="name" placeholder="Type your Name....">
+            <!-- <hr> -->
+    
+            <label class="BOLD" for="radio-btn">Gender:</label>
+            <div>
+                <input type="radio" name="male">
+                <label for="male"> Male</label>
+    
+                <input type="radio" name="female">
+                <label for="female"> Female</label>
+            </div>
+            <!-- <hr> -->
+    
+            <div>
+                <input type="checkbox" name="nwsltr" id="">
+                <label for="nwsltr">Subscribe for Newsletter</label>
+            </div>
+            <!-- <hr> -->
+    
+            <label class="BOLD" for="date">Birthdate:</label>
+            <input type="date" name="date" id="">
+            <!-- <hr> -->
+    
+            <label class="BOLD" for="mail">Email:</label>
+            <input type="email" name="mail" id="" placeholder="example@gmail.com">
+            <!-- <hr> -->
+    
+    
+            <label class="BOLD" for="msg">Message:</label>
+            <textarea name="msg" id="" cols="70" rows="5">Enter ur text here...</textarea>
+            <!-- <hr> -->
+    
+            <label class="BOLD" for="Country">Select Country:</label>
+            <select id="Country" name="Country">
+                <option value="volvo"> India </option>
+                <option value="saab"> United Kingdom </option>
+                <option value="fiat"> Belgium </option>
+                <option value="audi"> Arab Emirates </option>
+            </select>
+            <!-- <hr> -->
+    
+    
+            <label class="BOLD" for="upload">Choose File:</label>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="upload">
+            </form>
+    
+            <button class="submit-btn" type="button">Submit</button>
+    
+        </form>
+    </div>
+
+</body>
+</html>

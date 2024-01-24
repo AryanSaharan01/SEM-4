@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Form</title>
+
+    <style>
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form {
+            width: 30vw;
+            border: 2px solid #07bcc9ae;
+            margin: auto auto;
+            padding: 15px 25px;
+            margin-top: 10vh;
+            border-radius: 20px;
+            box-shadow: 10px 8px 9px 1px #07bcc9ae;
+
+        }
+
+        .form label {
+            padding-top: 10px;
+        }
+
+        button {
+            display: flex;
+            margin: auto auto;
+            margin-top: 3vh;
+            padding: 8px 40px;
+            border-radius: 12px;
+            font-weight: 600;
+            color: white;
+            font-size: large;
+            background-color: rgba(7, 161, 110, 0.732);
+            box-shadow: 10px 8px 9px 3px #808080ae;
+            border: transparent;
+            transition: 0.3s ease;
+        }
+
+        button:hover{
+            transition: 0.3s ease;
+            border: 2px solid black;
+            border-radius: 0px;
+            color: black;
+            background-color: rgb(235, 222, 38);
+        }
+
+        .BOLD {
+            font-size: large;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="/submit" method="post" class="form">
+
+        <label class="BOLD" for="name">Name:</label>
+        <input type="text" name="name" placeholder="Type your Name....">
+        <!-- <hr> -->
+
+        <label class="BOLD" for="radio-btn">Gender:</label>
+        <div>
+            <input type="radio" name="male">
+            <label for="male"> Male</label>
+
+            <input type="radio" name="female">
+            <label for="female"> Female</label>
+        </div>
+        <!-- <hr> -->
+
+        <div>
+            <input type="checkbox" name="nwsltr" id="">
+            <label for="nwsltr">Subscribe for Newsletter</label>
+        </div>
+        <!-- <hr> -->
+
+        <label class="BOLD" for="date">Birthdate:</label>
+        <input type="date" name="date" id="">
+        <!-- <hr> -->
+
+        <label class="BOLD" for="mail">Email:</label>
+        <input type="email" name="mail" id="" placeholder="example@gmail.com">
+        <!-- <hr> -->
+
+
+        <label class="BOLD" for="msg">Message:</label>
+        <textarea name="msg" id="" cols="70" rows="5">Enter ur text here...</textarea>
+        <!-- <hr> -->
+
+        <label class="BOLD" for="Country">Select Country:</label>
+        <select id="Country" name="Country">
+            <option value="volvo"> India </option>
+            <option value="saab"> United Kingdom </option>
+            <option value="fiat"> Belgium </option>
+            <option value="audi"> Arab Emirates </option>
+        </select>
+        <!-- <hr> -->
+
+
+        <label class="BOLD" for="upload">Choose File:</label>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="upload">
+        </form>
+
+        <button class="submit-btn" type="button">Submit</button>
+
+    </form>
+
+</body>
+
+</html>

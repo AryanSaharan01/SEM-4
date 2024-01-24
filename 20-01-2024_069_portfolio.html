@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            transition: 0.3s ease;
+            background-color: #111;
+            color: #fff;
+            padding-top: 5vh;
+            margin: 0;
+        }
+
+        .transparent {
+            transition: 0.3s ease;
+            margin: auto auto;
+            padding: 10px 30px;
+            width: 65vw;
+            border-radius: 20px;
+            box-shadow: 11px 0px 14px 3px greenyellow;
+            background-color: #333;
+            margin-bottom: 10vh;
+        }
+
+        .name {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 9.5vh;
+            font-weight: bolder;
+            text-align: center;
+            color: #11a888;
+            text-shadow: 1px 2px 0px greenyellow;
+        }
+
+        .headings {
+            color: #ff8c00;
+        }
+
+        p,
+        li {
+            color: #ccc;
+        }
+
+        th,
+        td {
+            border: 1px solid #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            color: #111;
+            background-color: greenyellow;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 900;
+        }
+
+        .prj {
+            width: 130px;
+        }
+
+        video {
+            border-radius: 15px;
+            width: 45vw;
+            height: 45vh;
+            background: none;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            background-color: #333;
+            margin-top: 5vh;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid greenyellow;
+        }
+
+        footer div {
+            padding-left: 5vw;
+            padding-right: 10vw;
+            text-decoration: underline greenyellow;
+        }
+
+        /* Floating theme change button */
+        #themeChangeBtn {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            background-color: #fff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 4px greenyellow;
+
+        }
+
+        #themeChangeBtn img {
+            height: 45px;
+            width: 50px;
+            color: #fff;
+
+        }
+
+        .light-theme {
+            transition: 0.3s ease;
+            background-color: rgb(238, 238, 238);
+            color: black;
+
+            .transparent {
+                transition: 0.3s ease;
+                box-shadow: 11px 0px 14px 3px #3BECF5;
+                background-color: #e3e2e2;
+            }
+
+            .name {
+
+                color: #11a888;
+                /* text-shadow: none; */
+                text-shadow: 1px 2px 0px rgb(116, 116, 116);
+
+            }
+
+            .headings {
+                color: #11a888;
+            }
+
+            p,
+            li {
+                /* color: #ccc; */
+                color: #111;
+            }
+
+            th,
+            td {
+                border: 1px solid #111;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                color: #111;
+                background-color: #11a888;
+            }
+
+            .prj {
+                width: 130px;
+            }
+
+            footer {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                /* background-color: orange; */
+                background-color: #11a888;
+                color: black;
+            }
+
+            footer div {
+                text-decoration: none;
+            }
+
+            #themeChangeBtn {
+                box-shadow: 0px 0px 10px 4px #3BECF5;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="transparent">
+        <h1 class="name">Aryan Saharan</h1>
+
+        <h2 class="headings">About Me:</h2>
+        <p> Hii, My name is Aryan Saharan currently I'm a student at Kr Mangalam University pursuing Btech CSE from
+            here.
+            I made some minor Projects in HTML, CSS and JS. I have good hand in HTML & CSS but currently learning JS to
+            gain experties in that. Now cosing is a part of my life, I love it
+        </p>
+
+        <h2 class="headings">Skills:</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <li>Nothing</li>
+        </ul>
+
+        <h2 class="headings">Projects:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="prj">Project Name</th>
+                    <th>Project Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Blog Website</td>
+                    <td>I made an fully functional Blog website using HTML, CSS & Java Script. In backend I used Flask
+                        and I used mySQL as my database</td>
+                </tr>
+                <tr>
+                    <td>Netflix</td>
+                    <td>Netflix Clone Website, It was a static website built usinh only HTML and CSS</td>
+                </tr>
+                <tr>
+                    <td>Hangman</td>
+                    <td>Imade an hangman game in JAVA. In this it asks u some some questions if u fail in answering that
+                        then ur player will be hanged </td>
+                </tr>
+                <!-- <tr>
+                    <td>Project 3</td>
+                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam sint minus laborum explicabo
+                        incidunt quos ipsam commodi iusto ut fugit!</td>
+                </tr> -->
+                
+            </tbody>
+        </table>
+
+        <h2 class="headings">Media:</h2>
+        <audio src="https://wynk.in/u/VKaKHj8vK" controls autoplay loop muted></audio>
+        <video
+            src="https://player.vimeo.com/progressive_redirect/playback/850743621/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=3bd92faae4d3e3d58d081c4dee9bb31cd0e64fc1d4c9fb5f1deebee26961762c"
+            height=auto controls>
+        </video>
+
+    </div>
+
+    <footer>
+        <div> Contact us: xyz@gmail.com </div>
+        <div> Contact No: +110908938 </div>
+    </footer>
+
+    <!-- Floating theme change button -->
+    <button id="themeChangeBtn">
+        <img src="https://static.thenounproject.com/png/3658224-200.png" alt="">
+    </button>
+
+    <script>
+        const body = document.body;
+
+        document.getElementById('themeChangeBtn').addEventListener('click', () => {
+            // Toggle between dark and light themes
+            body.classList.toggle('light-theme');
+        });
+    </script>
+</body>
+
+</html>
