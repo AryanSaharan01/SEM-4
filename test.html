@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            /* Top row auto height, bottom row takes the remaining space */
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Three columns with equal width */
+            gap: 20px;
+            /* Gap between the columns */
+            padding: 20px;
+        }
+
+        .horizontal-box {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .vertical-box {
+            background-color: #aaa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>About</p>
+        <p>Dishes</p>
+        <p>Bookings</p>
+        <p>ContactUs</p>
+    </header>
+
+    <main>
+        <!-- <div class="horizontal-box">
+            <p>Content goes here</p>
+        </div> -->
+        <div class="vertical-box">
+            <p>Mon - Fri: 11am - 10pm​</p>
+            <p>Sat - Sun: 11am - 12am</p>
+        </div>
+
+
+        <div class="vertical-box">
+            <p>500 Terry Francine Street</p>
+            <p>San Fransisco, CA 94158</p>
+        </div>
+        <div class="vertical-box">
+
+            <ul class="social-icons">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <!-- Add more social media icons as needed -->
+            </ul>
+            <p>&copy; 2024 Your Website</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
