@@ -96,12 +96,13 @@ height: 12vh;
 }
 
 .nav_items li {
-  padding: 10px 17px;
+  padding: 10px 10px;
   font-size: larger;
   text-decoration: none;
   border-radius: 35px;
 
   border: 1px solid transparent;
+  color: #fff;
   transition: 0.3s ease;
 }
 
@@ -139,9 +140,10 @@ height: 12vh;
   margin-bottom: 1vh;
   /* margin: 0vh auto 0vh auto; Center the container horizontally */
   background-color: #000000b0;
-  border-top: 2px solid white;
+  /* border-top: 2px solid white; */
+  border-top: 2px solid #ebb41c ;
   padding: 50px 200px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ebb41c;
   text-align: center;
 }
 
@@ -157,9 +159,10 @@ height: 12vh;
   color: #fff;
   /* margin: 0vh auto 0vh auto; Center the container horizontally */
   background-color: #000000b0;
-  border-top: 2px solid white;
+  /* border-top: 2px solid white; */
+  border-top: 2px solid #ebb41c;
   padding: 50px 200px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ebb41c;
   text-align: center;
 
   margin-top: 1vh;
