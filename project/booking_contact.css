@@ -10,6 +10,42 @@
   --hr-shadow: 7px 7px 2px #ebb41c;
 }
 
+.section-background {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  /* color: #FFFFFF; */
+}
+
+.parallax01 {
+  background-image: url("Static/assets/restaurant1.jpg");
+  height: 70vh;
+}
+
+.parallax02 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.292), rgba(0, 0, 0, 0.292)),
+    url("Static/assets/restaurant.jpg");
+  height: 70vh;
+}
+
+
+
+.parallax02 h1 {
+  margin: auto;
+  padding-top: 11rem;
+  text-align: center;
+  color: #fff;
+  font-size: 75px;
+  text-shadow: 13px 5px 3px #000000;
+  transition: 0.5s ease;
+}
+
+.parallax02 h1:hover{
+font-size: 80px;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 .main-content {
@@ -124,32 +160,248 @@ nav {
 
 /* ---------------------------------------------------------------- */
 
-.booking{
-    background-color: #000000ba;
-color: #fff;
-text-align: center;   
-padding: 5vh 10vw;
+.booking {
+  background-color: #000000ba;
+  color: #fff;
+  text-align: center;
+  padding: 5vh 10vw;
+  margin-top: 1vh;
+  border-top: 2px solid #fff;
+  transition: 0.4s ease;
+}
+.booking:hover {
+  border-top: 2px solid #ebb41c;
 }
 
-.booking h1{
-    margin-bottom: 3vh;
+.booking h1 {
+  margin-bottom: 3vh;
 }
 
-/* ----------------------------------------------------------- */
-.grid-line{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+/* -x-x-x-x-x-x-x-x-x---------SIDE BOX-----------x-x-x-x-x-x-x-x-x-x-x-x-x-x-x */
+
+.side-box {
+  margin-top: 0;
+  /* margin-left: 7vw; */
+
+  background-color: #000000e1;
+  /* background-color: #000000ba; */
+  text-align: center;
+  color: white;
+  padding: 4vh 3.3vw;
+  width: 15vw;
+
+  /* border: 2px solid yellow; */
+  /* border-top-color: transparent;
+      border-left:2px solid yellow ;
+      border-right:2px solid yellow ;
+      border-bottom:2px solid yellow ; */
+
+  h1 {
+    margin: 2vh;
+  }
 }
 
-.grid-line label h4{
-    text-align: left;
+/* ------------------------------------------------- */
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 15vw;
+  margin: auto;
+  margin-top: 50px;
 }
 
-.party-size select{
-    width: 20vw;
+.reservation-form select {
+  border: 2px solid transparent;
+  padding: 5px 5px;
+  box-shadow: 2px 2px 2px #fff;
+  transition: 0.4s ease;
+}
+.reservation-form select:hover {
+  box-shadow: 0px 0px 8px 3px #ebb41c;
+  cursor: pointer;
 }
 
+.datepicker {
+  border: 2px solid transparent;
+  padding: 5px 5px;
+  box-shadow: 2px 2px 2px #fff;
+  transition: 0.4s ease;
+}
+.datepicker:hover {
+  box-shadow: 0px 0px 8px 3px #ebb41c;
+  cursor: pointer;
+}
+
+.dark-bg {
+  background-color: #00000000;
+  color: #acacac;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+
+.dark-bg option,
+input {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-bg p {
+  color: #fff;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+
+.label-heading {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+/* ------------------------------------------------------- */
+.side-box button {
+  margin: 2vh 2vw;
+  margin-top: 5vh;
+  padding: 1.5vh 3vw;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  /* box-shadow: 0px 0px 8px 3px transparent; */
+  transition: 0.3s ease;
+}
+
+.side-box button:hover {
+  /* background-color: #fff; */
+  border: 2px solid #ebb41c;
+  box-shadow: 0px 0px 8px 3px #ebb41c;
+  color: #fff;
+  border-radius: 20px;
+}
+
+/* -----------------BOTTOM BOX---------------------------- */
+
+.bottom-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4vh 4.5vw;
+  background-color: #000000ba;
+  color: #fff;
+  gap: 8vw;
+}
+
+.bottom-text {
+  text-align: center;
+}
+
+.p-one {
+  margin-top: 5vh;
+}
+
+.p-two {
+  margin-top: 4vh;
+}
+
+.bottom-text,
+.bottom-form {
+  /* border: 2px solid red; */
+  padding: 3vh 1vw;
+}
+
+.soc-icon {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.soc-icon a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.soc-icon a:hover {
+  text-shadow: 13px 3px 2px #ebb41c;
+}
+
+.soc-icon li {
+  font-size: 25px;
+}
+
+/* ----------CONATCT FORM-------------- */
+
+.bottom-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000000ba; */
+  background-color: transparent;
+  color: white;
+}
+
+.main-flex {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner-flex {
+  margin: 0px 18px;
+}
+
+.main-flex p {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-flex label {
+  margin-bottom: 5px;
+}
+
+.main-flex input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.main-flex input:hover,
+textarea:hover {
+  box-shadow: 4px 4px 4px 1px #ebb41c;
+}
+
+.main-flex textarea {
+  resize: vertical;
+}
+
+.contact-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.3s ease;
+}
+
+.contact-button:hover {
+  border: 2px solid #ebb41c;
+  box-shadow: 0px 0px 8px 3px #ebb41c;
+  color: #fff;
+  border-radius: 30px;
+}
 
 /* -------------------------SIDE ICONS---------------------------------------------------- */
 
@@ -184,7 +436,7 @@ padding: 5vh 10vw;
   margin-top: 1vh;
   border-top: 2px solid #ebb41c;
   /* display: none; */
-  background-color: #0000009c;
+  background-color: #000000ba;
   list-style: none;
   text-decoration: underline transparent;
   display: flex;
@@ -219,7 +471,7 @@ footer {
   margin: 0;
   /* width: 80vw; */
   /* background-color: #000000e1; */
-  background-color: #0000009c;
+  background-color: #000000ba;
   color: #fff;
   text-align: center;
   padding: 4vh 10vw;
@@ -254,8 +506,15 @@ footer {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+
+}
+
+.ftr-sc-icon{
+  margin-bottom: 8px;
 }
 
 .social-icons a:hover {
-  color: #ebb41c;
+  /* color: #ebb41c; */
+  /* text-shadow: 11px -8px 2px #ebb41c; */
+
 }
