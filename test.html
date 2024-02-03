@@ -1,86 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout Example</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-rows: auto 1fr;
-            /* Top row auto height, bottom row takes the remaining space */
-            min-height: 100vh;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
         }
 
-        header {
+        .reservation-form {
             display: flex;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            flex-direction: column;
+            
+            width: 200px;
+            margin: auto;
+            margin-top: 50px;
         }
 
-        main {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* Three columns with equal width */
-            gap: 20px;
-            /* Gap between the columns */
-            padding: 20px;
+        input,
+        select,
+        button {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 5px;
         }
 
-        .horizontal-box {
-            background-color: #ddd;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .vertical-box {
-            background-color: #aaa;
-            padding: 20px;
-            text-align: center;
+        button {
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
+    <div class="reservation-form">
+        <label for="hlo">Party size</label>
+        <select id="hlo">
+            <option>2 guests</option>
+            <option>4 guests</option>
+            <option>6 guests</option>
+            <option>8 guests</option>
+            <option>Family</option>
+            <option>Single</option>
+            <!-- Add more options as needed -->
+        </select>
 
-    <header>
-        <p>About</p>
-        <p>Dishes</p>
-        <p>Bookings</p>
-        <p>ContactUs</p>
-    </header>
+        <!-- <input type="date" value="2024-03-02"> -->
 
-    <main>
-        <!-- <div class="horizontal-box">
-            <p>Content goes here</p>
-        </div> -->
-        <div class="vertical-box">
-            <p>Mon - Fri: 11am - 10pm​</p>
-            <p>Sat - Sun: 11am - 12am</p>
-        </div>
+        <label for="selectedDate">Date</label>
+        <input class="datepicker" type="date"  value="2024-03-02" />
 
 
-        <div class="vertical-box">
-            <p>500 Terry Francine Street</p>
-            <p>San Fransisco, CA 94158</p>
-        </div>
-        <div class="vertical-box">
-
-            <ul class="social-icons">
-                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <!-- Add more social media icons as needed -->
-            </ul>
-            <p>&copy; 2024 Your Website</p>
-        </div>
-    </main>
-
+        <label for="hii">Time</label>
+        <select id="hii">
+            <option>6:15 PM</option>
+            <option>6:30 PM</option>
+            <option>6:45 PM</option>
+            <option>7:00 PM</option>
+            <option>7:15 PM</option>
+            <option>7:30 PM</option>
+            <option>7:45 PM</option>
+            <option>8:00 PM</option>
+            <option>8:30 PM</option>
+            <option>8:45 PM</option>
+            <option>9:00 PM</option>
+            <option>9:15 PM</option>
+            <option>9:30 PM</option>
+            <option>9:45 PM</option>
+            <option>10:00 PM</option>
+            
+            <!-- Add more options as needed -->
+        </select>
+        <button>Find a Table</button>
+    </div>
 </body>
 
 </html>
